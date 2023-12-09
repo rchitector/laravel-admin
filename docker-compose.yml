@@ -19,6 +19,7 @@ services:
             IGNITION_LOCAL_SITES_PATH: '${PWD}'
         volumes:
             - '.:/var/www/html'
+            - '../rchitector/visual-editor/:/var/www/html/package/rchitector/visual-editor/'
         networks:
             - sail
         depends_on:

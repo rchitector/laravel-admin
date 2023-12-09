@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
+    "content-hash": "411bb2d83ee595ccef6aa408efeb672a",
     "packages": [
         {
             "name": "brick/math",
@@ -3182,6 +3182,25 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "rchitector/visual-editor",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./package/rchitector/visual-editor",
+                "reference": "36276b6f09dd6ed44784aa98c01f699a93d29665"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rchitector\\VisualEditor\\": "src/"
+                }
+            },
+            "description": "Visual editor for laravel",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/console",
@@ -8151,12 +8170,14 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rchitector/visual-editor": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
