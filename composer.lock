@@ -3191,10 +3191,25 @@
                 "url": "./package/rchitector/visual-editor",
                 "reference": "36276b6f09dd6ed44784aa98c01f699a93d29665"
             },
+            "require": {
+                "php": "^8.1"
+            },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rchitector\\VisualEditor\\App\\Providers\\PackageServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Rchitector\\VisualEditor\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Rchitector\\VisualEditor\\Tests\\": "tests/"
                 }
             },
             "description": "Visual editor for laravel",
@@ -6053,16 +6068,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "b8e0bb7d8c604046539c1115994632c74dcb361e"
+                "reference": "0cc058854b3195ba21dc6b1f7b1f60f4ef3a9c06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/b8e0bb7d8c604046539c1115994632c74dcb361e",
-                "reference": "b8e0bb7d8c604046539c1115994632c74dcb361e",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/0cc058854b3195ba21dc6b1f7b1f60f4ef3a9c06",
+                "reference": "0cc058854b3195ba21dc6b1f7b1f60f4ef3a9c06",
                 "shasum": ""
             },
             "require": {
@@ -6075,9 +6090,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5 || ^9.6.10",
-                "psalm/plugin-phpunit": "^0.18.4",
-                "symplify/easy-coding-standard": "^11.5.0",
-                "vimeo/psalm": "^4.30"
+                "symplify/easy-coding-standard": "^12.0.8"
             },
             "type": "library",
             "autoload": {
@@ -6134,7 +6147,7 @@
                 "security": "https://github.com/mockery/mockery/security/advisories",
                 "source": "https://github.com/mockery/mockery"
             },
-            "time": "2023-08-09T00:03:52+00:00"
+            "time": "2023-12-10T02:24:34+00:00"
         },
         {
             "name": "myclabs/deep-copy",
